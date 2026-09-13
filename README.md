@@ -1,13 +1,38 @@
-# Kirana
+# Kirana — Assistive Learning Prototype
 
-Kirana is a full-stack assistive learning prototype for Indonesian elementary students, especially children in grades 1-3 who may show early indicators of dyslexia. It combines early screening, handwriting analysis, oral reading analysis, adaptive PDF reading, gaze-aware interventions, and child-friendly Indonesian explanations.
+Kirana is a team-built full-stack assistive learning prototype for Indonesian elementary students, especially children in grades 1–3 who may show early indicators of dyslexia.
 
-The project is organized as a monorepo with:
+It combines:
 
-- **Backend**: FastAPI service for PDF extraction, audio transcription, handwriting analysis, dyslexia-risk reasoning, and knowledge retrieval.
-- **Frontend**: Next.js app for the Kirana landing page, screening flow, Smart Reader upload flow, and adaptive student reading session.
-- **Knowledge base**: Indonesian dyslexia guidance, reading-fluency benchmarks, and optional pgvector ingestion.
-- **Tests**: Backend unit/integration tests plus frontend unit/e2e test scaffolding.
+- multimodal screening support using handwriting, gaze, and oral-reading signals;
+- an adaptive PDF reader for guided reading sessions;
+- Indonesian-first educational guidance and retrieval; and
+- child-friendly AI explanations and recommendations.
+
+## Project context
+
+This repository is a personal fork of [Starath/ADA-SPARTANS-EXTENDED](https://github.com/Starath/ADA-SPARTANS-EXTENDED). Kirana was developed as a team project for HackFest 2026. The fork keeps the original project history and documentation while making the project identity and my contribution easier to review.
+
+## My contribution
+
+My contributions to the team repository include:
+
+- implementing the frontend homepage;
+- integrating the frontend favicon;
+- improving the README and landing-page documentation; and
+- renaming the project from DyslexiAID to Kirana.
+
+I am presenting this fork to make my contribution visible. The project was not built by me alone; see the [original repository](https://github.com/Starath/ADA-SPARTANS-EXTENDED) and Git history for the full team context.
+
+## Project at a glance
+
+| Area | Implementation |
+| --- | --- |
+| Screening support | YOLO-based handwriting analysis, WebGazer calibration, and Indonesian oral-reading transcription with faster-whisper |
+| Adaptive reading | PDF extraction, adaptive typography, gaze-aware reading sessions, and student reading links |
+| Backend | FastAPI service for analysis, orchestration, retrieval, and recommendations |
+| Frontend | Next.js application for the landing page, screening flow, and Smart Reader experience |
+| AI and retrieval | LangGraph-style multi-step reasoning, Indonesian dyslexia guidance, and optional pgvector ingestion |
 
 > **Clinical disclaimer:** This application provides **screening support only**. It is not a clinical diagnosis tool. Children with persistent or disruptive indicators should be referred to qualified professionals such as educational psychologists, neuropsychologists, speech therapists, or other relevant clinicians.
 
@@ -15,23 +40,26 @@ The project is organized as a monorepo with:
 
 ## Table of contents
 
-1. [Core capabilities](#core-capabilities)
-2. [System architecture](#system-architecture)
-3. [Repository structure](#repository-structure)
-4. [Tech stack](#tech-stack)
-5. [Prerequisites](#prerequisites)
-6. [Environment variables](#environment-variables)
-7. [Local development](#local-development)
-8. [Backend API](#backend-api)
-9. [Frontend routes](#frontend-routes)
-10. [Screening pipeline](#screening-pipeline)
-11. [Smart Reader pipeline](#smart-reader-pipeline)
-12. [AI and model behavior](#ai-and-model-behavior)
-13. [Knowledge base and RAG](#knowledge-base-and-rag)
-14. [Testing](#testing)
-15. [Troubleshooting](#troubleshooting)
-16. [Production notes](#production-notes)
-17. [Roadmap ideas](#roadmap-ideas)
+1. [Project context](#project-context)
+2. [My contribution](#my-contribution)
+3. [Project at a glance](#project-at-a-glance)
+4. [Core capabilities](#core-capabilities)
+5. [System architecture](#system-architecture)
+6. [Repository structure](#repository-structure)
+7. [Tech stack](#tech-stack)
+8. [Prerequisites](#prerequisites)
+9. [Environment variables](#environment-variables)
+10. [Local development](#local-development)
+11. [Backend API](#backend-api)
+12. [Frontend routes](#frontend-routes)
+13. [Screening pipeline](#screening-pipeline)
+14. [Smart Reader pipeline](#smart-reader-pipeline)
+15. [AI and model behavior](#ai-and-model-behavior)
+16. [Knowledge base and RAG](#knowledge-base-and-rag)
+17. [Testing](#testing)
+18. [Troubleshooting](#troubleshooting)
+19. [Production notes](#production-notes)
+20. [Roadmap ideas](#roadmap-ideas)
 
 ---
 
