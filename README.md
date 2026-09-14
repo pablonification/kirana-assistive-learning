@@ -6,20 +6,22 @@ It combines handwriting analysis, gaze tracking, oral-reading analysis, adaptive
 
 > **Clinical disclaimer:** Kirana provides screening support only. It is not a clinical diagnosis tool and must not replace assessment by qualified professionals.
 
-## Project context
+## Repository context
 
-This repository is a personal fork of [Starath/ADA-SPARTANS-EXTENDED](https://github.com/Starath/ADA-SPARTANS-EXTENDED). Kirana was developed as a team project for HackFest 2026. The fork keeps the original history while making the project identity and my contribution easier to review.
+This repository is a personal fork of [Starath/ADA-SPARTANS-EXTENDED](https://github.com/Starath/ADA-SPARTANS-EXTENDED).
 
-## My contribution
+The fork preserves the original team history while documenting the project identity and changes made in this repository.
 
-My contributions to the team repository include:
+## Changes in this fork
 
-- implementing the frontend homepage;
-- integrating the frontend favicon;
-- improving the README and landing-page documentation; and
-- renaming the project from DyslexiAID to Kirana.
+This fork includes:
 
-The project was not built by me alone. See the [original repository](https://github.com/Starath/ADA-SPARTANS-EXTENDED) and Git history for the full team context.
+- the frontend homepage;
+- favicon integration;
+- README and landing-page documentation improvements; and
+- the project rename from DyslexiAID to Kirana.
+
+Kirana remains a team project. See the original repository and Git history for the complete project context.
 
 ## What it demonstrates
 
@@ -149,6 +151,3 @@ Real handwriting inference requires a local YOLO model file. The first Whisper r
 - The current setup is a prototype and needs authentication, restricted CORS, upload limits, managed secrets, and durable storage before production use.
 - Child-related data such as handwriting, audio, gaze data, and screening indicators requires careful privacy and retention controls.
 
-## Original project
-
-The team source repository is [Starath/ADA-SPARTANS-EXTENDED](https://github.com/Starath/ADA-SPARTANS-EXTENDED). This fork is intended to document my contribution clearly while preserving the original team context.
